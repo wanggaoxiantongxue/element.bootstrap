@@ -1,0 +1,78 @@
+.sliderbar-wrap {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    /* margin: 15px 0; */
+    position: relative;
+    border-radius: 3px;
+}
+
+.sliderbar {
+    width: 100%;
+    height: 10px;
+    background-color: tomato;
+    border-radius: 3px;
+    /* position: relative; */
+    /* margin: 15px 0px; */
+    animation: progress 10s linear;
+}
+
+.sliderbar-wrap>.sliderbar>.sliderbar-control {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid tomato;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: calc(100% - 25px);
+    bottom: -85%;
+    text-align: center;
+    line-height: 25px;
+    animation: move 10s linear;
+}
+
+@keyframes progress {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes move {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: calc(100% - 25px);
+    }
+}
+
+.sliderbar-success{
+    background-color: springgreen;
+}
+.sliderbar-success>.sliderbar-control{
+    border: 1px solid springgreen;
+}
+.sliderbar-info{
+    background-color: rgb(33, 147, 176);
+}
+.sliderbar-info>.sliderbar-control{
+    border: 1px solid blue;
+}
+.sliderbar-primary{
+    background-color:  rgb(171, 186, 171);
+}
+.sliderbar-primary>.sliderbar-control{
+    border: 1px solid #ccc;
+}
+.sliderbar-error{
+    background-color: rgb(234, 56, 77);
+}
+.sliderbar-error.sliderbar-control{
+    border: 1px solid red;
+}

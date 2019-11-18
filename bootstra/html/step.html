@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../wgxQueryUI/scarreryQuerstep.css">
+    <style>
+    .step-wrap{
+        width: 100%;
+    }
+    .step-wrap>.step{
+        /* float: left; */
+        display: inline-block;
+        
+    }
+    .step-wrap>.step>.step-circle{
+        /* float: left; */
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        position: relative;
+        vertical-align: middle;
+        margin-left: -0.5rem;
+    }
+    .step-wrap>.step>.step-circle-info{
+        border: 3px solid #409eff;
+    }
+    .step-wrap>.step>.step-circle-primary{
+        border: 3px solid #ccc;
+    }
+    .step-wrap>.step>.step-circle-default{
+        border: 3px solid #000;
+    }
+    .step-line{
+        /* float: left; */
+        display: inline-block;
+        width: 8rem;
+        height: 0.5rem;
+        background-color: #ccc;
+        vertical-align: middle;
+        margin-left: -0.5rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="step-wrap">
+        <div class="step">
+            <!-- 进度图形 -->
+            <span class="step-circle step-circle-info">1</span>
+            <!-- 进度内容 -->
+            
+            <span class="step-container"></span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+                <span class="step-circle step-circle-default">2</span>
+                <span class="step-container"></span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+                <span class="step-circle step-circle-primary">3</span>
+                <span class="step-container"></span>
+        </div>
+    </div>
+</body>
+</html>

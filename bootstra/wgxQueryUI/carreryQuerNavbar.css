@@ -1,0 +1,45 @@
+/* 
+导航条组件 兼容移动端
+1：所有的元素状态默认为显示状态
+@media 以为是所有屏幕共有的样式
+*/
+.navbar{
+    display: none;
+}
+.navbar>.navbar-default{
+    display: block;
+    color: #333333;
+}
+
+.nav-inverse{
+    display: block;
+    color: #383838;
+}
+/* 默认移动端 让下来的提示按钮为隐藏状态 */
+.collapse{
+    display: block;
+}
+.navbar-header{
+    width: 100%;
+    display: inline-block;
+    float: none;
+}
+.navbar-form-control .form-control{
+    display: inline-block;
+    width: auto;
+    border: none;
+    outline: none;
+    appearance: none;
+}
+.navbar-form-control .form-control：focus{
+    outline: none;
+}
+@media screen and (min-width:768px) {
+    .navbar-header{
+        float: left;
+    }
+    /* 平板电脑共有的样式 */
+    .navbar-header>.navbar-toggle.collapse{
+        display: none;
+    }
+}

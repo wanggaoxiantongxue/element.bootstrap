@@ -1,0 +1,1063 @@
+/* 
+    这是一个全局css样式库
+*/
+/* 清空默认样式 */
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  /* 表单 */
+    input,
+    button,
+    select,
+    textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+input{
+    border: none;
+    appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+/* 清空表单样式 */
+
+  /*将所有布局类标签设为块 */
+ article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/* 音频进程 */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+/* 清空 a标签默认样式 */
+a {
+    background-color: transparent;
+    color: #337ab7;
+    text-decoration: none;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+   /* 清空列表类默认样式 */
+   ul,ol,li,dd,dt,dl{
+    list-style: none;
+  }
+  *{
+      box-sizing: border-box;
+  }
+  *::after{
+      box-sizing: border-box;
+  }
+  *::before{
+      box-sizing: border-box;
+  }
+ 
+
+/* 布局 */
+.container{
+    width: 90%;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.container{
+    width: 100%;
+    padding: 0px 15px;
+}
+/* 按钮组件样式 */
+.g-btn{
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+            touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        /* color: #fff; */
+    }
+    .g-btn-default{
+        background-color:#333 ;
+        color: #fff;
+        border: 1px solid #ccc;
+    }
+    .g-btn-success{
+        background-color: #67c23a;
+        color: #fff;
+    }
+ /* 失败     */
+.g-btn-fail{
+    background-color: darkgray;
+    color: #fff;
+    }
+/* 警告     */
+.g-btn-warining{
+background-color: #e6a23c;
+color: #fff;
+}
+/* 错误 */
+.g-btn-error{
+background-color: #f56c6c;
+border-color:  #f56c6c;
+color: #fff;
+}
+/* 取消     */
+.g-btn-cancel{
+    border-color: #909399;
+background-color: #909399;
+color: #fff;
+}
+/* 确定    */
+ .g-btn-sure{
+    border-color:#8bc220 ;
+    background-color: #8bc220;
+    color:#fff ;
+}
+/* 默认     */
+.g-btn-default{
+    border-color: #2f2f2f;
+    background-color: #2f2f2f;
+    color:#fff;
+}
+/* 危险     */
+.g-btn-danger{
+    border-color:#ff1022 ;
+    background-color:#ff1022 ;
+    color:#fff ;
+}
+/* 首选     */
+.g-btn-primany{
+    border-color:#409eff ;
+    background-color:#409eff ;
+    color: #fff;
+}
+/* 一般信息     */
+.g-btn-info{
+    border-color:#01aaed ;
+    background-color:#01aaed ;
+    color:#fff ;
+}
+/* 百搭按钮     */
+.g-btnnormal{
+    border-color:#ffb800 ;
+    background-color:#ffb800 ;
+    color:#fff ;
+}
+/* 暖色按钮     */
+.g-btn-warm{
+    border-color:hsl(51, 93%, 54%) ;
+    background-color:hsl(51, 93%, 54%);
+    color:#fff ;
+}
+
+/* 渐变按钮 */
+/* 成功     */
+.g-btn-success-rgb{ 
+    background-image: linear-gradient(135deg, rgb(105, 255, 151) 10%, rgb(0, 228, 255) 100%);
+    color: #fff;
+    outline: none;
+}
+/* 失败     */
+.g-btn-fail-rgb{
+    background-color: rgba();
+    color: #fff;
+}
+/* 警告     */
+.g-btn-warining-rgb{
+    background-image: linear-gradient(135deg, rgb(253, 110, 106) 10%, rgb(255, 198, 0) 100%);
+    color: #fff;
+}
+/* 错误     */
+.g-btn-error-rgb{
+    background-image: linear-gradient(135deg, rgb(240, 95, 87) 10%, rgb(54, 9, 64) 100%);
+    color: #fff;
+}
+/* 取消     */
+.g-btn-cancel-rgb{
+    background-image: linear-gradient(135deg, rgb(107, 95, 95) 10%, rgb(63, 56, 65) 100%);
+    color: #fff;
+}
+/* 确定     */
+.g-btn-sure-rgb{
+    background-image: linear-gradient(135deg, rgb(112, 245, 112) 10%, rgb(73, 198, 40) 100%);
+    color: #f3f3f3;
+}
+/* 默认     */
+.g-btn-default-rgb{
+    background-image: linear-gradient(135deg, rgb(38, 41, 38) 10%, rgb(108, 116, 106) 100%);
+    color: #fff;
+}
+/* 危险     */
+.g-btn-danger-rgb{
+    background-image: linear-gradient(135deg, rgb(218, 46, 16) 10%, rgb(234, 84, 85) 100%);
+    color: #fff;
+}
+/* 首选  */
+.g-btn-primany-rgb{
+    background-image: linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
+    color: #fff;
+}
+/* 一般信息     */
+.g-btn-info-rgb{
+    background-image: linear-gradient(135deg, rgb(94, 252, 232) 10%, rgb(115, 110, 254) 100%);
+    color: #fff;
+}
+
+/* 百搭按钮     */
+.g-btnnormal-rgb{
+    background-image: linear-gradient(135deg, rgb(254, 193, 99) 10%, rgb(222, 67, 19) 100%);
+    color: #fff;
+}
+/* 暖色按钮     */
+.g-btn-warm-rgb{
+    background-image: linear-gradient(135deg, rgb(253, 235, 113) 10%, rgb(248, 216, 0) 100%);
+    color: #fff;
+}
+
+/* 大按钮 小按钮 中按钮 */
+.g-btn-bg{
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 3px;
+    line-height: 1.333333;
+}
+.g-btn-sm{
+padding: 1px 5px;
+font-size: 12px;
+line-height: 1.5;
+}
+.g-btn-md{
+    padding: 1px 5px;
+    font-size: 16px;
+    border-radius: 3px;
+    line-height: 1.5;
+}
+/* 圆角 */
+.g-btn-radius{
+    border-radius: 50px;
+}
+
+/* 表格样式 */
+/* 清空表格默认样式 */
+table{
+    background-color: transparent;
+    /* 表格塌陷 */
+    border-collapse: collapse;
+    border: 0px;
+}
+th{
+    font-weight: bold;
+    color: #909399;
+}
+.g-table{
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+.g-table td{
+    border: 1px solid #e0e0e0;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    color: #606263;
+    padding: 10px 0 10px 15px;
+    
+}
+.g-table>thead>tr>th{
+    text-align: left;
+    font-weight: 600;
+    color: #606263;
+    padding: 10px 0 10px 15px;
+}
+.g-table-column>tbody>tr>td{
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+.g-table-column>tbody>tr>td:first-child{
+    border-left: 1px solid transparent;
+}
+.g-table-column>tbody>tr>td:last-child{
+    border-right: 1px solid transparent;
+}
+
+
+
+
+.g-tableStriped>tbody>tr:nth-of-type(even){
+    background-color: #fafafa;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+.g-table-striped>tbody>tr>td{
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+
+.g-tableHover>tbody>tr>td:hover{
+    background-color: #f5f7fa !important;
+    border-bottom: 1px solid #ccc !important;;
+}
+
+.g-tableCondensed>thead>tr>th,
+.g-tableCondensed>tbody>tr>td{
+    padding: 5px;
+
+}
+.g-table > thead > tr > td.g-warning,
+.g-table > tbody > tr > td.g-warning, 
+.g-table > tfoot > tr > td.g-warning, 
+.g-table > thead > tr > th.g-warning, 
+.g-table > tbody > tr > th.g-warning, 
+.g-table > tfoot > tr > th.g-warning, 
+.g-table > thead > tr.g-warning > td, 
+.g-table > tbody > tr.g-warning > td,
+.g-table > tfoot > tr.g-warning > td, 
+.g-table > thead > tr.g-warning > th, 
+.g-table > tbody > tr.g-warning > th, 
+.g-table > tfoot > tr.g-warning > th{
+    background-color: #f56c6c;
+    color: #f3e1e1;
+    border-bottom: 1px solid #f56c6c;
+}
+.g-table > thead > tr > td.g-info,
+.g-table > tbody > tr > td.g-info, 
+.g-table > tfoot > tr > td.g-info, 
+.g-table > thead > tr > th.g-info, 
+.g-table > tbody > tr > th.g-info, 
+.g-table > tfoot > tr > th.g-info, 
+.g-table > thead > tr.g-info > td, 
+.g-table > tbody > tr.g-info > td,
+.g-table > tfoot > tr.g-info > td, 
+.g-table > thead > tr.g-info > th, 
+.g-table > tbody > tr.g-info > th, 
+.g-table > tfoot > tr.g-info > th{
+    background-color: #01aaed;
+    color: #f3e1e1;
+    border-bottom: 1px solid #01aaed;
+}
+.g-table > thead > tr > td.g-success,
+.g-table > tbody > tr > td.g-success, 
+.g-table > tfoot > tr > td.g-success, 
+.g-table > thead > tr > th.g-success, 
+.g-table > tbody > tr > th.g-success, 
+.g-table > tfoot > tr > th.g-success, 
+.g-table > thead > tr.g-success > td, 
+.g-table > tbody > tr.g-success > td,
+.g-table > tfoot > tr.g-success > td, 
+.g-table > thead > tr.g-success > th, 
+.g-table > tbody > tr.g-success > th, 
+.g-table > tfoot > tr.g-success > th{
+    background-color:#8bc220 ;
+    color: #d4f5e2;
+    border-bottom: 1px solid #8bc220;
+}
+.g-table > thead > tr > td.g-danger,
+.g-table > tbody > tr > td.g-danger, 
+.g-table > tfoot > tr > td.g-danger, 
+.g-table > thead > tr > th.g-danger, 
+.g-table > tbody > tr > th.g-danger, 
+.g-table > tfoot > tr > th.g-danger, 
+.g-table > thead > tr.g-danger > td, 
+.g-table > tbody > tr.g-danger > td,
+.g-table > tfoot > tr.g-danger > td, 
+.g-table > thead > tr.g-danger > th, 
+.g-table > tbody > tr.g-danger > th, 
+.g-table > tfoot > tr.g-danger > th{
+    background-color:#ff1022 ;
+    color: #f7cdc7;
+    border-bottom: 1px solid #ff1022;
+}
+.g-table > thead > tr > td.g-primary,
+.g-table > tbody > tr > td.g-primary, 
+.g-table > tfoot > tr > td.g-primary, 
+.g-table > thead > tr > th.g-primary, 
+.g-table > tbody > tr > th.g-primary, 
+.g-table > tfoot > tr > th.g-primary, 
+.g-table > thead > tr.g-primary > td, 
+.g-table > tbody > tr.g-primary > td,
+.g-table > tfoot > tr.g-primary > td, 
+.g-table > thead > tr.g-primary > th, 
+.g-table > tbody > tr.g-primary > th, 
+.g-table > tfoot > tr.g-primary > th{
+    background-color:#ffb800 ;
+    color: #f7e8c0;
+    border-bottom: 1px solid #ffb800;
+}
+.g-table > thead > tr > td.g-warm,
+.g-table > tbody > tr > td.g-warm, 
+.g-table > tfoot > tr > td.g-warm, 
+.g-table > thead > tr > th.g-warm, 
+.g-table > tbody > tr > th.g-warm, 
+.g-table > tfoot > tr > th.g-warm, 
+.g-table > thead > tr.g-warm > td, 
+.g-table > tbody > tr.g-warm > td,
+.g-table > tfoot > tr.g-warm > td, 
+.g-table > thead > tr.g-warm > th, 
+.g-table > tbody > tr.g-warm > th, 
+.g-table > tfoot > tr.g-warm > th{
+    background-color:hsl(51, 93%, 54%);
+    border-bottom:1px solid hsl(51, 93%, 54%);
+    color: #d4f5e2;
+}
+.g-tableBorder>tbody>tr>td,
+.g-tableBorder>thead>tr>th,
+.g-tableBorder>tfoot>tr>td{
+    border: 1px solid #e0e0e0;
+}
+/* 黑色表格 */
+
+.g-tableInverse{
+    background-color: #393d49;
+
+}
+.g-tableInverse>tbody>tr>td{
+    color: #576784;
+    text-align: center;
+    border: 1px solid #303242;
+}
+.g-tableInverse>tfoot>tr>td,
+.g-tableInverse>thead>tr>th,
+.g-tableInverse>tbody>tr>th{
+    text-align: center;
+    color: #8f8f8f;
+    border-bottom:1px solid #303242;
+}
+.g-tableInverse>tfoot>tr>td:last-child,
+.g-tableInverse>thead>tr>th:last-child,
+.g-tableInverse>tbody>tr>th:last-child{
+    border-right: 1px solid #393d49;
+}
+
+.g-tableInverse_striped>tbody>tr:nth-of-type(odd)>td{
+    background-color: #303242;
+    color: #ccc;
+    border-bottom: 1px solid #393d49;
+    text-align: center;
+}
+.g-tableInverse_striped>tbody>tr:nth-of-type(even)>td{
+    background-color:#393d49 ;
+    border-bottom: 1px solid #303242;
+    color: #ccc;
+    text-align: center;
+}
+.g-tableInverse_striped>thead>tr>th,
+.g-tableInverse_striped>tbody>tr>th{
+    background-color:#393d49 ;
+    border-bottom: 1px solid #303242;
+    color: #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+.g-tableInverse_hover.g-tableInverse>tbody>tr:hover>td,
+.g-tableInverse_hover.g-tableInverse_striped>tbody>tr:hover>td{
+    background-color: #000;
+    color: #fff;
+}
+/* 写兼容移动端的表格： */
+@media  screen and (max-width:768px) {
+    .g-tableResponsive{
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border:1px solid #e0e0e0
+    }
+    .g-tableResponsive{
+        /* 当到达移动端不让加大高度 */
+        min-height: .01%;
+        overflow-x:auto;
+
+    }
+     /* 实现横向滚动条 */
+     @media screen and (max-width: 767px) {
+        .g-tableResponsive > .table > thead > tr > th,
+        .g-tableResponsive > .table > tbody > tr > th, 
+        .g-tableResponsive > .table > tfoot > tr > th, 
+        .g-tableResponsive > .table > thead > tr > td,
+        .g-tableResponsive > .table > tbody > tr > td, 
+        .g-tableResponsive > .table > tfoot > tr > td {
+            white-space: nowrap;
+            /* min-width: 1%;
+            width: 1%; */
+        }
+     }
+}
+
+ /* 
+    没有做：等宽度选择器
+    给td设置最小宽度
+ */
+
+ /* 分页样式 */
+
+.page{
+    width: 100%;
+}
+.pagination{
+    display: inline-block;
+    margin: 0px -15px;
+}
+.pagination>li>a{
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #383030;
+
+}
+.pagination>li{
+    display: inline-block;
+    /* float: left;*/
+    list-style: none; 
+}
+/* 清除浮动 */
+.pagination-bgc>li>a{
+    background-color: #f4f4f5;
+    color: #303133;
+    font-size: 12px;
+    padding:5px  10px;
+    border: 1px solid #f4f4f5;
+    font-weight: 900;
+}
+.pagination-bgc .active>a{
+    background-color: #40b6ff;
+    color: #fafaf5;
+}
+.pagination-bgc>li>a:hover{
+    background-color: #40b6ff;
+    color: #fafaf5;
+}
+
+
+.pagination-noBgc>li>a{
+    background-color: #f4f4f5;
+    color: #303133;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid transparent;
+    font-weight: 900;
+}
+.pagination-noBgc .active>a{
+    color: #40b6ff;
+}
+.pagination-noBgc>li>a:hover{
+    color: #40b6ff;
+}
+
+
+.pagination-inverse>li>a{
+    background-color: #393d49;
+    color:#ccc;
+    font-size: 14px;
+
+    border: 1px solid #393d49;
+    
+}
+.pagination-inverse>li{
+    float: left;
+}
+.pagination-inverse>li .active>a{
+    background-color:#000 ;
+    color:#fff ;
+    border: 1px solid #000;
+}
+.pagination-inverse>li>a:hover{
+    background-color:#000 ;
+    color:#fff ;
+    border: 1px solid #000;
+}
+
+
+
+.pagination-inverse-lg>li>a{
+    background-color: #393d49;
+    color:#ccc;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #393d49;
+}
+.pagination-inverse-lg>li>a:hover{
+    background-color:#000 ;
+    color:#fff ;
+    border: 1px solid #000;
+}
+.pagination-inverse-lg>li{
+    float: left;
+}
+.pagination-inverse>li .active>a{
+    background-color:#000 ;
+    color:#fff ;
+    border: 1px solid #000;
+}
+
+
+
+
+/* 辅助类 */
+/* 选择框 */
+.circle-check,.square-check,.check-content{
+    display: inline-block;
+}
+.circle-check .check-content{
+    margin-left: 10px;
+}
+.square-check .check-content{
+    margin-left: 10px;
+}
+ .circle-check>input[type="checkbox"]{
+  width:1.64rem;
+  height:1.64rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align:middle; 
+  line-height: 1.64rem;
+  position: relative;
+  border-radius: 50%;
+  outline: none;
+  -webkit-appearance: none;
+  border:1px solid #fff;
+  -webkit-tab-highlight-color: rgba(0,0,0,0);
+  color: #fff;
+  background: #fff;
+}
+.circle-check>input[type="checkbox"]::before{
+    box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  color: #fff;
+}
+.circle-check>input[type="checkbox"]:checked::before{
+    box-sizing: border-box;
+  content: "\2713";
+  background-color: #657AFE;
+   border: 1px solid #657AFE;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  color:#fff;
+  font-size: 1rem;
+  border-radius: 50%;
+
+}
+.circle-check>input[type="checkbox"]:disabled::before{
+    background: #eee;
+    cursor: default;
+}
+.square-check > input[type="checkbox"] {
+        overflow: hidden;
+        width: 1.64rem;
+        height: 1.64rem;
+        vertical-align: middle;
+        outline: none;
+        text-align: center;
+        line-height: 1.64rem;
+        /* 清空表单元素默认样式；input 突起或者；凹进去的 浅灰背景色 */
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        position: relative;
+        /* 行高颜色 解决移动端按钮；点击出现透明灰色样式 */
+        -webkit-tab-highlight-color: rgba(0, 0, 0, 0);
+        color: #fff;
+      }
+      .square-check > input[type="checkbox"]::before {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      /* 选中checkbox 没有选中时候；伪元素的样式 */
+      .square-check > input[type="checkbox"]:disabled::before {
+        background-color: #fff;
+      }
+      .square-check > input[type="checkbox"]:checked::before {
+        content: "\2713";
+        background: #657afe;
+        border: 1px solid #657afe;
+        /* font-size: 1rem; */
+      }
+      .square-check>input[type=checkbox]:checked{
+          border: 1px solid transparent;
+      }
+      .square-check>input[type=checkbox]:disabled{
+        border: 1px solid #ccc;
+    }
+
+
+
+    .sliderbar-wrap {
+        display: inline-block;
+        width: 100%;
+        border: 1px solid #ccc;
+        /* margin: 15px 0; */
+        position: relative;
+        border-radius: 3px;
+    }
+    
+    .sliderbar {
+        width: 100%;
+        height: 10px;
+        background-color: tomato;
+        border-radius: 3px;
+        /* position: relative; */
+        /* margin: 15px 0px; */
+        animation: progress 10s linear;
+    }
+    
+    .sliderbar-wrap>.sliderbar>.sliderbar-control {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid tomato;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        left: calc(100% - 25px);
+        bottom: -85%;
+        text-align: center;
+        line-height: 25px;
+        animation: move 10s linear;
+    }
+    
+    @keyframes progress {
+        from {
+            width: 0px;
+        }
+    
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes move {
+        from {
+            left: 0%;
+        }
+    
+        to {
+            left: calc(100% - 25px);
+        }
+    }
+    
+    .sliderbar-success{
+        background-color: springgreen;
+    }
+    .sliderbar-success>.sliderbar-control{
+        border: 1px solid springgreen;
+    }
+    .sliderbar-info{
+        background-color: rgb(33, 147, 176);
+    }
+    .sliderbar-info>.sliderbar-control{
+        border: 1px solid blue;
+    }
+    .sliderbar-primary{
+        background-color:  rgb(171, 186, 171);
+    }
+    .sliderbar-primary>.sliderbar-control{
+        border: 1px solid #ccc;
+    }
+    .sliderbar-error{
+        background-color: rgb(234, 56, 77);
+    }
+    .sliderbar-error.sliderbar-control{
+        border: 1px solid red;
+    }
+
+
+
+    input[type=checkbox].switch{
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        width: 2.8rem;
+        height: 1.52rem;
+        border: 1px solid #ccc;
+        background-color: #ccc;
+        border-radius: 0.7rem;
+    }
+    
+    input[type=checkbox].switch::after{
+        content: "";
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0 2px #999;
+        transition: left 0.1s;
+        position: absolute;
+        top: 0px;left: 0px;
+    }
+    input[type=checkbox].switch:checked{
+        background-color: #32ba58;
+    }
+    /* 
+    1：默认不被选中状态
+    当input[type=checkbox]被选中时候 伪元素显示下面样式 位置发生变化
+    */
+    input[type=checkbox].switch:checked::after{
+        position: absolute;
+        top: 0px;
+        left: 1.4rem;
+    }
+    
+    /* 状态 */
+    
+    
+    input[type=checkbox]:checked.switch.switch-info{
+        background-color:#409eff ;
+    }
+    input[type=checkbox]:checked.switch.switch-danger{
+        background-color: red;
+    }
+    input[type=checkbox]:checked.switch.switch-warm{
+        background-color:hsl(51, 93%, 54%); ;
+    }
+    input[type=checkbox]:checked.switch.switch-primary{
+        background-color:#409eff ;
+    }
+    input[type=checkbox].switch.switch-primary{
+        background-color: red;
+    }
+    /* 导航条样式 */
+    /* 导航     不兼容移动端 */
+.nav{
+    display: block;
+    width: 100%;
+    /* 高度不能受限制 */
+}
+.nav,.nav>ul{
+    padding: 0px 10px;
+}
+.nav li{
+    list-style: none;
+    float: left;
+}
+/* 给祖籍元素 */
+.nav::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1;
+
+}
+.nav li>a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    padding: 15px;
+}
+
+
+.nav-table{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    
+}
+.nav-table .active>a{
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    box-shadow: 1px 1px 15px 1px #ccc;
+    font-weight: bold;
+}
+.nav-table li{
+    position: relative;
+    top: 1px;
+}
+.nav-table li:hover{
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    box-shadow: 1px 1px 15px 1px #ccc;
+    font-weight: bold;
+}
+
+
+.nav-pills .active>a{
+    background-color: #409eff; 
+    color:#fff;
+}
+.nav-pills li>a:hover{
+    background-color: #409eff; 
+    color:#fff;
+}
+
+.nav-pills{
+    box-shadow: 0px 2px 5px 2px #ccc;
+}
+/* .nav-stacked{
+    padding: 0px !important;
+} */
+.nav-stacked li{
+    width: 100%;
+    text-align: center;
+    
+}
+.nav-stacked li>a{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.nav-inverse{
+    background-color: #545c64;
+}
+.nav-inverse .active>a{
+    color: #ffba21;
+    border-bottom: 2px solid #ffba21;
+}
+.nav-inverse li>a{
+    color: #fff;
+}
+.nav-inverse li>a:hover{
+    color: #ffba21;
+    border-bottom: 2px solid #ffba21;
+}
+
+
+
+.nav-inverse-stacked{
+    background-color: #545c64;
+}
+.nav-inverse-stacked,.nav-inverse-stacked>ul{
+    padding: 0px !important;
+}
+.nav-inverse-stacked li{
+    width: 100%;
+    text-align: center;
+}
+.nav-inverse-stacked li>a{
+    width: 100%;
+    color: #fff;
+}
+.nav-inverse-stacked li>a:hover{
+    color: #799fd8;
+    background-color: #000;
+}
+.nav-inverse-stacked .active>a{
+    color: #799fd8;
+    background-color: #000;
+}
+
+/* 背景色为黑色的导航条 */
+.nav-inverse-black{
+    background-color: #272c2c;
+}
+.nav-inverse-black .active>a{
+    color: #fff;
+    border-bottom: 2px solid #799fd8;
+}
+.nav-inverse-black li>a{
+    color: #799fd8;
+}
+.nav-inverse-black li>a:hover{
+    color: #799fd8;
+    border-bottom: 2px solid #799fd8;
+}
+
+
+
+.nav-inverse-gray{
+    background-color: #545c64;
+}
+.nav-inverse-gray,.nav-inverse-gray>ul{
+    padding: 0px !important;
+}
+.nav-inverse-gray li{
+    width: 100%;
+    text-align: center;
+}
+.nav-inverse-gray li>a{
+    width: 100%;
+    color: #fff;
+}
+.nav-inverse-gray li>a:hover{
+    color: #799fd8;
+    background-color:rgb(84, 92, 100)
+}
+.nav-inverse-gray .active>a{
+    color: #799fd8;
+    background-color:rgb(84, 92, 100);
+}
+
+
+.nav-fixed-top{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-left{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-top{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-right{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-right-15{
+    position: fixed;
+    top: 15px;
+}

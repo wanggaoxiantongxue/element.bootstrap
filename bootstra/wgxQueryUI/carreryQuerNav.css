@@ -1,0 +1,184 @@
+/* 导航     不兼容移动端 */
+.nav{
+    display: block;
+    width: 100%;
+    /* 高度不能受限制 */
+}
+.nav,.nav>ul{
+    padding: 0px 10px;
+}
+.nav li{
+    list-style: none;
+    float: left;
+}
+/* 给祖籍元素 */
+.nav::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1;
+
+}
+.nav li>a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    padding: 15px;
+}
+
+
+.nav-table{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    
+}
+.nav-table .active>a{
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    box-shadow: 1px 1px 15px 1px #ccc;
+    font-weight: bold;
+}
+.nav-table li{
+    position: relative;
+    top: 1px;
+}
+.nav-table li:hover{
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    box-shadow: 1px 1px 15px 1px #ccc;
+    font-weight: bold;
+}
+
+
+.nav-pills .active>a{
+    background-color: #409eff; 
+    color:#fff;
+}
+.nav-pills li>a:hover{
+    background-color: #409eff; 
+    color:#fff;
+}
+
+.nav-pills{
+    box-shadow: 0px 2px 5px 2px #ccc;
+}
+/* .nav-stacked{
+    padding: 0px !important;
+} */
+.nav-stacked li{
+    width: 100%;
+    text-align: center;
+    
+}
+.nav-stacked li>a{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.nav-inverse{
+    background-color: #545c64;
+}
+.nav-inverse .active>a{
+    color: #ffba21;
+    border-bottom: 2px solid #ffba21;
+}
+.nav-inverse li>a{
+    color: #fff;
+}
+.nav-inverse li>a:hover{
+    color: #ffba21;
+    border-bottom: 2px solid #ffba21;
+}
+
+
+
+.nav-inverse-stacked{
+    background-color: #545c64;
+}
+.nav-inverse-stacked,.nav-inverse-stacked>ul{
+    padding: 0px !important;
+}
+.nav-inverse-stacked li{
+    width: 100%;
+    text-align: center;
+}
+.nav-inverse-stacked li>a{
+    width: 100%;
+    color: #fff;
+}
+.nav-inverse-stacked li>a:hover{
+    color: #799fd8;
+    background-color: #000;
+}
+.nav-inverse-stacked .active>a{
+    color: #799fd8;
+    background-color: #000;
+}
+
+/* 背景色为黑色的导航条 */
+.nav-inverse-black{
+    background-color: #272c2c;
+}
+.nav-inverse-black .active>a{
+    color: #fff;
+    border-bottom: 2px solid #799fd8;
+}
+.nav-inverse-black li>a{
+    color: #799fd8;
+}
+.nav-inverse-black li>a:hover{
+    color: #799fd8;
+    border-bottom: 2px solid #799fd8;
+}
+
+
+
+.nav-inverse-gray{
+    background-color: #545c64;
+}
+.nav-inverse-gray,.nav-inverse-gray>ul{
+    padding: 0px !important;
+}
+.nav-inverse-gray li{
+    width: 100%;
+    text-align: center;
+}
+.nav-inverse-gray li>a{
+    width: 100%;
+    color: #fff;
+}
+.nav-inverse-gray li>a:hover{
+    color: #799fd8;
+    background-color:rgb(84, 92, 100)
+}
+.nav-inverse-gray .active>a{
+    color: #799fd8;
+    background-color:rgb(84, 92, 100);
+}
+
+
+.nav-fixed-top{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-left{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-top{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-right{
+    position: fixed;
+    top: 0;
+}
+.nav-fixed-right-15{
+    position: fixed;
+    top: 15px;
+}

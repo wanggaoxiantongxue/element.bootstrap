@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../wgxQueryUI/wgxQueryUI.css">
+    <style>
+        .clearFix::after {
+            content: '';
+            display: table;
+            visibility: hidden;
+            clear: both;
+        }
+        
+        .soure {
+            width: 820px;
+            padding: 24px;
+        }
+        
+        .soure>form {
+            width: 460px;
+        }
+        
+        .soure .input-inner {
+            cursor: pointer;
+        }
+        /* 典型表单 */
+        
+        .soure .form-item {
+            margin-bottom: 22px;
+            font-size: 12px;
+        }
+        
+        .form>.form-item>.form-item-label {
+            text-align: right;
+            vertical-align: middle;
+            float: left;
+            font-size: 14px;
+            color: #606266;
+            line-height: 40px;
+            padding: 0 12px 0 0;
+            box-sizing: border-box;
+        }
+        
+        .form>.form-item>.form-item-content {
+            margin-left: 80px;
+            width: 380px;
+        }
+        
+        .form>.form-item>.form-item-content>.input-inner {
+            display: inline-block;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: #fff;
+            background-image: none;
+            border-radius: 4px;
+            border: 1px solid #dcdfe6;
+            box-sizing: border-box;
+            color: #606266;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 15px;
+            width: 100%;
+        }
+        
+        .form>.form-item>.form-item-content>.input-inner:focus {
+            border-color: #409eff;
+        }
+        
+        .form>.form-item>.form-item-content>.input-inner::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: #ddd;
+        }
+        
+        .form-item-content-link {
+            float: left;
+            line-height: 40px;
+        }
+        
+        .form>.form-item>.form-item-content>.form-item-content-wrap {
+            width: 170px;
+            box-sizing: border-box;
+            padding: 0 30px;
+            border: 1px solid #ccc;
+            float: left;
+        }
+        
+        .form>.form-item>.form-item-content>.form-item-content-wrap>.input-inner {
+            float: left;
+            width: 100%;
+            border: 0px;
+            outline: none;
+            height: 40px;
+        }
+        
+        .form>.form-item>.form-item-content {
+            height: 40px;
+        }
+        
+        .form>.form-item>.form-item-content>.switch {
+            margin-top: 7px;
+        }
+        
+        .form>.form-item>.form-item-content>.square-check {
+            margin-top: 8px;
+            min-width: 180px;
+        }
+        
+        .form>.form-item>.form-item-content>.square-check>input {
+            vertical-align: middle;
+            width: 1rem;
+            height: 1rem;
+            line-height: 1rem;
+            margin-right: 10px;
+        }
+        
+        .form>.form-item>.form-item-content>.square-check>input:checked::before {
+            width: 1rem;
+            height: 1rem;
+            font-size: 1rem;
+        }
+        
+        .form>.form-item>.form-item-content>.circle-check {
+            margin-top: 8px;
+            min-width: 180px;
+        }
+        
+        .form>.form-item>.form-item-content>.circle-check>input {
+            vertical-align: middle;
+            width: 1rem;
+            height: 1rem;
+            line-height: 1rem;
+            margin-right: 10px;
+        }
+        
+        .form>.form-item>.form-item-content>.circle-check>input:checked::before {
+            content: '';
+            width: 0.3rem;
+            height: 0.3rem;
+            border-radius: 50%;
+            font-size: 2rem;
+            background-color: #fff;
+            border: 0.5rem solid #409eff;
+        }
+        
+        .form>.form-item>.form-item-content>textarea {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            outline: none;
+            min-width: 380px;
+            max-width: 380px;
+            height: 50px;
+            min-height: 33px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .form>.form-item>.form-item-content>textarea:focus {
+            border-color: #409eff;
+        }
+        
+        .form>.form-item>.form-item-content>.g-btn {
+            margin-right: 10px;
+        }
+        
+        .form>.form-item>.form-item-content>.basic {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* 行内表单 */
+        
+        .soure .form-inline {
+            width: 100%;
+        }
+        
+        .form-inline>.form-item>.form-item-content {
+            float: left;
+            margin: 0 10px 22px 0;
+            width: 220px;
+        }
+        
+        .form-inline>.form-item>.form-item-content>label {
+            margin-right: 10px;
+        }
+        
+        .form-inline>.form-item>.form-item-content .input-inner {
+            /* float: left; */
+            width: 150px;
+            padding: 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .form-inline>.form-item>.form-item-content .input-inner:focus {
+            border-color: #409eff;
+        }
+        
+        .form-inline>.form-item>.form-item-content .g-btn-primany {
+            margin-top: 5px;
+            width: 70px;
+            font-size: 12px;
+        }
+        /* 动态增减表单项 */
+        
+        .form-dynamic>.form-item>.form-item-label {
+            width: 100px;
+            text-align: right;
+        }
+        
+        .form-dynamic>.form-item>.form-item-content .input-inner {
+            width: 270px;
+            padding: 0 15px;
+            margin-right: 10px;
+        }
+        
+        .form-dynamic>.form-buttom {
+            padding-left: 100px;
+        }
+        
+        .form-dynamic>.form-buttom>.basic {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="soure">
+        <h3>典型表单</h3>
+        <h5>包括各种表单项，比如输入框、选择器、开关、单选框、多选框等。</h5>
+        <form class="form">
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;">活动名称</label>
+                <div class="form-item-content">
+                    <input type="text" autocomplete="off" class="input-inner">
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;">活动区域</label>
+                <div class="form-item-content">
+                    <input type="text" autocomplete="off" class="input-inner" placeholder="请选择活动区域">
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;">活动名称</label>
+                <div class="form-item-content clearFix">
+                    <div class="form-item-content-wrap">
+                        <input type="text" autocomplete="off" class="input-inner">
+                    </div>
+                    <div class="form-item-content-link">&#8195;-&#8195;</div>
+                    <div class="form-item-content-wrap">
+                        <input type="text" autocomplete="off" class="input-inner">
+                    </div>
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;">及时配送</label>
+                <div class="form-item-content">
+                    <input type="checkbox" class="switch">
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;">活动性质</label>
+                <div class="form-item-content">
+                    <div class="square-check">
+                        <input type="checkbox" /><span>美食/餐厅线上活动</span>
+                    </div>
+                    <div class="square-check">
+                        <input type="checkbox" /><span>地推活动</span>
+                    </div>
+                </div>
+                <div class="form-item-content">
+                    <div class="square-check">
+                        <input type="checkbox" /><span>线下主题活动</span>
+                    </div>
+                    <div class="square-check">
+                        <input type="checkbox" /><span>单纯品牌曝光</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;">特殊资源</label>
+                <div class="form-item-content">
+                    <div class="circle-check">
+                        <input type="checkbox" name="special" /><span>线上品牌赞助商</span>
+                    </div>
+                    <div class="circle-check">
+                        <input type="checkbox" name="special" /><span>线下场地免费</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;">活动名称</label>
+                <div class="form-item-content">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label" style="width: 80px;"></label>
+                <div class="form-item-content">
+                    <div class="g-btn g-btn-info">立即创建</div>
+                    <div class="g-btn basic">取消</div>
+                </div>
+            </div>
+        </form>
+        <h3>行内表单</h3>
+        <h5>当垂直方向空间受限且表单较简单时，可以在一行内放置表单。</h5>
+        <form class="form form-inline">
+            <div class="form-item clearFix">
+                <div class="form-item-content clearFix">
+                    <label class="form-item-label" style="width: 80px;">审批人</label>
+                    <input type="text" autocomplete="off" class="input-inner" placeholder="审批人">
+                </div>
+                <div class="form-item-content clearFix">
+                    <label class="form-item-label" style="width: 80px;">活动区域</label>
+                    <input type="text" autocomplete="off" class="input-inner" placeholder="活动区域">
+                </div>
+                <div class="form-item-content clearFix">
+                    <span class="g-btn g-btn-primany">查询</span>
+                </div>
+            </div>
+        </form>
+        <!-- <h3>动态增减表单项</h3> -->
+        <!-- <form class="form form-dynamic">
+            <div class="form-item clearFix">
+                <label class="form-item-label">邮箱</label>
+                <div class="form-item-content">
+                    <input type="text" autocomplete="off" class="input-inner">
+                </div>
+            </div>
+            <div class="form-item clearFix">
+                <label class="form-item-label">域名</label>
+                <div class="form-item-content">
+                    <input type="text" autocomplete="off" class="input-inner" placeholder="请选择活动区域">
+                    <span class="g-btn basic">删除</span>
+                </div>
+
+            </div>
+            <div class="form-item form-buttom">
+                <span class="g-btn g-btn-info">提交</span>
+                <span class="g-btn basic">新增域名</span>
+                <span class="g-btn basic">重置</span>
+            </div>
+        </form> -->
+
+
+    </div>
+</body>
+
+</html>

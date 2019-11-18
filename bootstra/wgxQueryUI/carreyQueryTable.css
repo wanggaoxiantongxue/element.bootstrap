@@ -1,0 +1,269 @@
+/* 表格样式 */
+/* 清空表格默认样式 */
+table{
+    background-color: transparent;
+    /* 表格塌陷 */
+    border-collapse: collapse;
+    border: 0px;
+}
+th{
+    font-weight: bold;
+    color: #909399;
+}
+.g-table{
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+.g-table td{
+    border: 1px solid #e0e0e0;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    color: #606263;
+    padding: 10px 0 10px 15px;
+    
+}
+.g-table>thead>tr>th{
+    text-align: left;
+    font-weight: 600;
+    color: #606263;
+    padding: 10px 0 10px 15px;
+}
+.g-table-column>tbody>tr>td{
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+.g-table-column>tbody>tr>td:first-child{
+    border-left: 1px solid transparent;
+}
+.g-table-column>tbody>tr>td:last-child{
+    border-right: 1px solid transparent;
+}
+
+
+
+
+.g-tableStriped>tbody>tr:nth-of-type(even){
+    background-color: #fafafa;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+.g-table-striped>tbody>tr>td{
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+
+.g-tableHover>tbody>tr>td:hover{
+    background-color: #f5f7fa !important;
+    border-bottom: 1px solid #ccc !important;;
+}
+
+.g-tableCondensed>thead>tr>th,
+.g-tableCondensed>tbody>tr>td{
+    padding: 5px;
+
+}
+.g-table > thead > tr > td.g-warning,
+.g-table > tbody > tr > td.g-warning, 
+.g-table > tfoot > tr > td.g-warning, 
+.g-table > thead > tr > th.g-warning, 
+.g-table > tbody > tr > th.g-warning, 
+.g-table > tfoot > tr > th.g-warning, 
+.g-table > thead > tr.g-warning > td, 
+.g-table > tbody > tr.g-warning > td,
+.g-table > tfoot > tr.g-warning > td, 
+.g-table > thead > tr.g-warning > th, 
+.g-table > tbody > tr.g-warning > th, 
+.g-table > tfoot > tr.g-warning > th{
+    background-color: #f56c6c;
+    color: #f3e1e1;
+    border-bottom: 1px solid #f56c6c;
+}
+.g-table > thead > tr > td.g-info,
+.g-table > tbody > tr > td.g-info, 
+.g-table > tfoot > tr > td.g-info, 
+.g-table > thead > tr > th.g-info, 
+.g-table > tbody > tr > th.g-info, 
+.g-table > tfoot > tr > th.g-info, 
+.g-table > thead > tr.g-info > td, 
+.g-table > tbody > tr.g-info > td,
+.g-table > tfoot > tr.g-info > td, 
+.g-table > thead > tr.g-info > th, 
+.g-table > tbody > tr.g-info > th, 
+.g-table > tfoot > tr.g-info > th{
+    background-color: #01aaed;
+    color: #f3e1e1;
+    border-bottom: 1px solid #01aaed;
+}
+.g-table > thead > tr > td.g-success,
+.g-table > tbody > tr > td.g-success, 
+.g-table > tfoot > tr > td.g-success, 
+.g-table > thead > tr > th.g-success, 
+.g-table > tbody > tr > th.g-success, 
+.g-table > tfoot > tr > th.g-success, 
+.g-table > thead > tr.g-success > td, 
+.g-table > tbody > tr.g-success > td,
+.g-table > tfoot > tr.g-success > td, 
+.g-table > thead > tr.g-success > th, 
+.g-table > tbody > tr.g-success > th, 
+.g-table > tfoot > tr.g-success > th{
+    background-color:#8bc220 ;
+    color: #d4f5e2;
+    border-bottom: 1px solid #8bc220;
+}
+.g-table > thead > tr > td.g-danger,
+.g-table > tbody > tr > td.g-danger, 
+.g-table > tfoot > tr > td.g-danger, 
+.g-table > thead > tr > th.g-danger, 
+.g-table > tbody > tr > th.g-danger, 
+.g-table > tfoot > tr > th.g-danger, 
+.g-table > thead > tr.g-danger > td, 
+.g-table > tbody > tr.g-danger > td,
+.g-table > tfoot > tr.g-danger > td, 
+.g-table > thead > tr.g-danger > th, 
+.g-table > tbody > tr.g-danger > th, 
+.g-table > tfoot > tr.g-danger > th{
+    background-color:#ff1022 ;
+    color: #f7cdc7;
+    border-bottom: 1px solid #ff1022;
+}
+.g-table > thead > tr > td.g-primary,
+.g-table > tbody > tr > td.g-primary, 
+.g-table > tfoot > tr > td.g-primary, 
+.g-table > thead > tr > th.g-primary, 
+.g-table > tbody > tr > th.g-primary, 
+.g-table > tfoot > tr > th.g-primary, 
+.g-table > thead > tr.g-primary > td, 
+.g-table > tbody > tr.g-primary > td,
+.g-table > tfoot > tr.g-primary > td, 
+.g-table > thead > tr.g-primary > th, 
+.g-table > tbody > tr.g-primary > th, 
+.g-table > tfoot > tr.g-primary > th{
+    background-color:#ffb800 ;
+    color: #f7e8c0;
+    border-bottom: 1px solid #ffb800;
+}
+.g-table > thead > tr > td.g-warm,
+.g-table > tbody > tr > td.g-warm, 
+.g-table > tfoot > tr > td.g-warm, 
+.g-table > thead > tr > th.g-warm, 
+.g-table > tbody > tr > th.g-warm, 
+.g-table > tfoot > tr > th.g-warm, 
+.g-table > thead > tr.g-warm > td, 
+.g-table > tbody > tr.g-warm > td,
+.g-table > tfoot > tr.g-warm > td, 
+.g-table > thead > tr.g-warm > th, 
+.g-table > tbody > tr.g-warm > th, 
+.g-table > tfoot > tr.g-warm > th{
+    background-color:hsl(51, 93%, 54%);
+    border-bottom:1px solid hsl(51, 93%, 54%);
+    color: #d4f5e2;
+}
+.g-tableBorder>tbody>tr>td,
+.g-tableBorder>thead>tr>th,
+.g-tableBorder>tfoot>tr>td{
+    border: 1px solid #e0e0e0;
+}
+/* 黑色表格 */
+
+.g-tableInverse{
+    background-color: #393d49;
+
+}
+.g-tableInverse>tbody>tr>td{
+    color: #576784;
+    text-align: center;
+    border: 1px solid #303242;
+}
+.g-tableInverse>tfoot>tr>td,
+.g-tableInverse>thead>tr>th,
+.g-tableInverse>tbody>tr>th{
+    text-align: center;
+    color: #8f8f8f;
+    border-bottom:1px solid #303242;
+}
+.g-tableInverse>tfoot>tr>td:last-child,
+.g-tableInverse>thead>tr>th:last-child,
+.g-tableInverse>tbody>tr>th:last-child{
+    border-right: 1px solid #393d49;
+}
+
+.g-tableInverse_striped>tbody>tr:nth-of-type(odd)>td{
+    background-color: #303242;
+    color: #ccc;
+    border-bottom: 1px solid #393d49;
+    text-align: center;
+}
+.g-tableInverse_striped>tbody>tr:nth-of-type(even)>td{
+    background-color:#393d49 ;
+    border-bottom: 1px solid #303242;
+    color: #ccc;
+    text-align: center;
+}
+.g-tableInverse_striped>thead>tr>th,
+.g-tableInverse_striped>tbody>tr>th{
+    background-color:#393d49 ;
+    border-bottom: 1px solid #303242;
+    color: #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+.g-tableInverse_hover.g-tableInverse>tbody>tr:hover>td,
+.g-tableInverse_hover.g-tableInverse_striped>tbody>tr:hover>td{
+    background-color: #000;
+    color: #fff;
+}
+/* 写兼容移动端的表格： */
+@media  screen and (max-width:768px) {
+    .g-tableResponsive{
+        width: 100%;
+        margin-bottom: 15px;
+
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border:1px solid #e0e0e0
+    }
+    .g-tableResponsive{
+        /* 当到达移动端不让加大高度 */
+        min-height: .01%;
+        overflow-x:auto;
+
+    }
+     /* 实现横向滚动条 */
+}
+@media screen and (max-width: 767px){
+    .g-tableResponsive > .table > thead > tr > th,
+    .g-tableResponsive > .table > tbody > tr > th, 
+    .g-tableResponsive > .table > tfoot > tr > th, 
+    .g-tableResponsive > .table > thead > tr > td,
+    .g-tableResponsive > .table > tbody > tr > td, 
+    .g-tableResponsive > .table > tfoot > tr > td {
+        white-space: nowrap;
+        min-width: 1%;
+        width: 1%;
+    }
+ }
+ /* 
+    没有做：等宽度选择器
+    给td设置最小宽度
+ */
+
+
+ .table-control{
+    position: relative;
+}
+.table-control table>tr>td:last-child{
+    position: absolute;
+    right:0;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: -5px 4px 6px 1px rgba(0,0,0,.12);
+}
+.table-control table>tr>td:nth-last-child(2)::before{
+    content："";
+    width: 120px;
+}
+.table-control>.table-box{
+    overflow: auto;
+}

@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 清空input的默认样式 */
+input {
+    /* border 输入框没有边框 */
+    border: none;
+    /* 清空默认样式，输入框样式，按钮样式，选择框样式 */
+    appearance: none;
+    -moz-appearance: none;
+    /* 获取焦点时的默认样式 */
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.form-group{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-control{
+    display: block;
+    border:1px solid #ccc;
+    padding: 10px 10px;
+    width: 100%;
+    /* outline: auto; */
+}
+/* input 获取焦点 .form-control显示样式 */
+/* 可以将其他元素变为表单元素 :focus 值针对有可以获取焦点的元素 */
+.form-control:focus{
+    outline: 1px solid #409eff;
+}
+.form-label{
+    font-weight: bolder;
+    display: inline-block;
+    padding-bottom: 5px 3px 5px 5px;
+}
+/* 
+基础样式    权重最低 随时可以覆盖 代替
+
+可选择样式：在基础样式上进行改变添加，通过权重级别高低来进行覆盖样式
+
+自定义 给用户足够空间 让用户通过搭建不同的结构 自己进行样式添加 
+
+结构    1：占得多少份 2：如何布局
+
+*/
